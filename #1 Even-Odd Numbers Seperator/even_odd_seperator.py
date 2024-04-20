@@ -1,6 +1,6 @@
 # pseudocode
 
-# Make a "number.txt" file with 20 integers
+# Make a "numbers.txt" file with 20 integers
 
 # Read the contents of the txt file
 with open("numbers.txt", "r") as file:
@@ -14,7 +14,6 @@ even_numbers = []
 for num in numbers:
     if num % 2 == 0:
         even_numbers.append(num)
-        print(num)
 
 # Compute the odd numbers in the list
 # Create an "even.txt" for even numbers
