@@ -9,12 +9,14 @@ with open("numbers.txt", "r") as file:
 # Convert string to integers
     numbers = (int(num) for num in numbers)
 
-# Compute the even numbers in the list
+# Find the even and odd numbers in the list
 even_numbers = []
+odd_numbers = []
 for num in numbers:
     if num % 2 == 0:
         even_numbers.append(num)
+    else:
+        odd_numbers.append(num)
 
-# Compute the odd numbers in the list
 # Create an "even.txt" for even numbers
 # Create an "odd.txt" for odd numbers
