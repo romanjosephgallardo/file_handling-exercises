@@ -30,3 +30,9 @@ with open("odd.txt", "w") as odd_file:
     odd_file.write("Here is the odd numbers: \n")
     for num in odd_numbers:
         odd_file.write(str(num) + "\n")
+
+# Shows a message in the shell where the files are already created
+horizontal_border = "=" * 50
+message = "The files have been successfully created :>".center(50)
+print(horizontal_border + "\n" * 2 +
+      message + "\n" * 2 + horizontal_border)
