@@ -1,6 +1,4 @@
-# pseudocode
-
-# Make a "numbers.txt" file with 20 integers
+# Make a "numbers.txt" file with 20 integers (already done)
 
 # Read the contents of the txt file
 with open("numbers.txt", "r") as file:
@@ -21,18 +19,18 @@ for num in numbers:
 
 # Create an "even.txt" for even numbers
 with open("even.txt", "w") as even_file:
-    even_file.write("Here is the even numbers: \n")
+    even_file.write("Here is/are the even numbers: \n")
     for num in even_numbers:
         even_file.write(str(num) + "\n")
 
 # Create an "odd.txt" for odd numbers
 with open("odd.txt", "w") as odd_file:
-    odd_file.write("Here is the odd numbers: \n")
+    odd_file.write("Here is/are the odd numbers: \n")
     for num in odd_numbers:
         odd_file.write(str(num) + "\n")
 
 # Shows a message in the shell where the files are already created
 horizontal_border = "=" * 50
-message = "The files have been successfully created :>".center(50)
+message = "The files have been successfully created. :>".center(50)
 print(horizontal_border + "\n" * 2 +
       message + "\n" * 2 + horizontal_border)
