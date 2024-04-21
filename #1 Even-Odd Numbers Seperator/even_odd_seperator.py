@@ -1,5 +1,11 @@
 # Make a "numbers.txt" file with 20 integers (already done)
 
+# Define a function to print a message
+def print_message(message):
+    horizontal_border = "=" * 50
+    formatted_message = f"{horizontal_border}\n\n{message.center(50)}\n\n{horizontal_border}"
+    print(formatted_message)
+
 # Read the contents of the txt file
 try:
     with open("numbers.txt", "r") as file:
@@ -7,7 +13,7 @@ try:
         # Convert string to integers
         numbers = (int(num) for num in numbers)
 except FileNotFoundError:
-    print("File not found")
+    print_message("File not found.")
     exit(1)
 
 
@@ -34,8 +40,5 @@ with open("odd.txt", "w") as odd_file:
         odd_file.write(str(num) + "\n")
 
 # Shows a message in the shell where the files are already created
-horizontal_border = "=" * 50
-message = "The files have been successfully created. :>".center(50)
-print(horizontal_border + "\n" * 2 +
-      message + "\n" * 2 + horizontal_border)
+print_message("The files have been successfully created :>.")
 
