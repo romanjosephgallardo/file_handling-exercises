@@ -1,7 +1,10 @@
-# pseudocode
+import pandas as pd
 
-# Have a file with 20 students and their GWA (done)
 
+# Have a file with 20 students and their GWA ()
+# For instance, this program used Excel file (.xlsx)
+
+# Define a function to print an output
 def print_message(first_line, second_line):
     horizontal_border = "=" * 50
     formatted_message = (f"{horizontal_border}\n\n"
@@ -11,10 +14,18 @@ def print_message(first_line, second_line):
     print(formatted_message)
 
 
-# Read the file
-import pandas as pd
+def print_error_message(error):
+    horizontal_border = "=" * 50
+    formatted_message = f"{horizontal_border}\n\n{error.center(50)}\n\n{horizontal_border}"
+    print(formatted_message)
 
-student_data = pd.read_excel("students_gwa.xlsx")
+
+# Read the file and handle errors
+try:
+    student_data = pd.read_excel("students_gwa.xlsx")
+except FileNotFoundError:
+    print_error_message("Error: File not found.")
+    exit(1)
 
 # Find the student with highest GWA
 highest_gwa = student_data.loc[student_data['GWA'].idxmin()]
