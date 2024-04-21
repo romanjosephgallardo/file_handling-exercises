@@ -3,8 +3,11 @@
 # Define a function to print a message
 def print_message(message):
     horizontal_border = "=" * 50
-    formatted_message = f"{horizontal_border}\n\n{message.center(50)}\n\n{horizontal_border}"
+    formatted_message = (f"{horizontal_border}\n\n"
+                         f"{message.center(50)}\n\n"
+                         f"{horizontal_border}")
     print(formatted_message)
+
 
 # Read the contents of the txt file
 try:
@@ -15,7 +18,6 @@ try:
 except FileNotFoundError:
     print_message("File not found.")
     exit(1)
-
 
 # Find the even and odd numbers in the list
 even_numbers = []
@@ -41,4 +43,3 @@ with open("odd.txt", "w") as odd_file:
 
 # Shows a message in the shell where the files are already created
 print_message("The files have been successfully created :>.")
-
