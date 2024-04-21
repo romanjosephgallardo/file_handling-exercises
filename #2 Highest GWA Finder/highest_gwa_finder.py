@@ -12,6 +12,7 @@ highest_to_lowest = (
     .sort_values("GWA", ascending=True)
     .to_string(index=False)
 ) # Sorts the GWA (1.00 being the highest)
+highest_gwa_row = (highest_to_lowest.split("\n")[1])
 
 
 
