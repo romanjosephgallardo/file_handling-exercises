@@ -27,6 +27,10 @@ except FileNotFoundError:
     print_error_message("Error: File not found.")
     exit(1)
 
+# Check if the file is empty
+if student_data.empty:
+    print_error_message("Error: No data found in the file")
+
 # Find the student with highest GWA
 highest_gwa = student_data.loc[student_data['GWA'].idxmin()]
 
