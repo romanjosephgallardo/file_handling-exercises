@@ -1,8 +1,9 @@
 import pandas as pd
 
+''' Have a file with 20 students and their GWA
+For instance, this program used Excel file (.xlsx)
+The program uses 5-point scale for GWA where 1.00 is the highest '''
 
-# Have a file with 20 students and their GWA ()
-# For instance, this program used Excel file (.xlsx)
 
 # Define a function to print an output
 def print_message(first_line, second_line):
@@ -13,7 +14,7 @@ def print_message(first_line, second_line):
                          f"{horizontal_border}")
     print(formatted_message)
 
-
+# Define a function to print error outputs
 def print_error_message(error):
     horizontal_border = "=" * 50
     formatted_message = f"{horizontal_border}\n\n{error.center(50)}\n\n{horizontal_border}"
