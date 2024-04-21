@@ -4,10 +4,10 @@
 
 # Read the file
 import pandas as pd
-students_gwa = pd.read_excel("students_gwa.xlsx")
+student_data = pd.read_excel("students_gwa.xlsx")
 
 # Find the student with highest GWA
-highest_gwa = students_gwa.loc[students_gwa['GWA'].idxmin()]
+highest_gwa = student_data.loc[student_data['GWA'].idxmin()]
 
 # Extract the name and GWA of the student
 student_name = highest_gwa.iloc[0]
