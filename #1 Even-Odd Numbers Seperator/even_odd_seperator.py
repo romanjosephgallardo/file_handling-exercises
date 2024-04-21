@@ -1,11 +1,15 @@
 # Make a "numbers.txt" file with 20 integers (already done)
 
 # Read the contents of the txt file
-with open("numbers.txt", "r") as file:
-    numbers = file.read().split()
+try:
+    with open("numbers.txt", "r") as file:
+        numbers = file.read().split()
+        # Convert string to integers
+        numbers = (int(num) for num in numbers)
+except FileNotFoundError:
+    print("File not found")
+    exit(1)
 
-# Convert string to integers
-    numbers = (int(num) for num in numbers)
 
 # Find the even and odd numbers in the list
 even_numbers = []
@@ -34,3 +38,4 @@ horizontal_border = "=" * 50
 message = "The files have been successfully created. :>".center(50)
 print(horizontal_border + "\n" * 2 +
       message + "\n" * 2 + horizontal_border)
+
