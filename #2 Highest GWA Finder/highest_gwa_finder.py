@@ -14,6 +14,7 @@ def print_message(first_line, second_line):
                          f"{horizontal_border}")
     print(formatted_message)
 
+
 # Define a function to print error outputs
 def print_error_message(error):
     horizontal_border = "=" * 50
