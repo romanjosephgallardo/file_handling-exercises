@@ -14,3 +14,6 @@ student_name = highest_gwa.iloc[0]
 student_gwa = highest_gwa.iloc[1]
 
 # Display the student and their GWA
+print("Student with the highest GWA:")
+print(f"Name: {student_name}")
+print(f"GWA: {student_gwa}")
