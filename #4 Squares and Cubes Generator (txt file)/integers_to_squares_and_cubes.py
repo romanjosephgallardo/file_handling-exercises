@@ -6,15 +6,17 @@ def print_message(message):
                          f"{horizontal_border}")
     print(formatted_message)
 
+
 # Calculate square of even numbers
 def square_integers(num):
-    squared = num ** 2
-    return "{:,.0f}".format(squared)
+    square = num ** 2
+    return "{:,.0f}".format(square)
+
 
 # Calculate cube of odd numbers
 def cube_integers(num):
-    squared = num ** 2
-    return "{:,.0f}".format(squared)
+    cube = num ** 3
+    return "{:,.0f}".format(cube)
 
 
 # Read the contents of the source text file
