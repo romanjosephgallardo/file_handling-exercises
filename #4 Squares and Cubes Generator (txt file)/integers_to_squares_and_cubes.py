@@ -30,7 +30,7 @@ try:
                 num = int(int_str)
                 integers.append(num)
             except ValueError:
-                print_message(f"Error: non-integer value found in file.")
+                print_message("Error: non-integer value found in file.")
                 exit(1)
 except FileNotFoundError:
     print_message("Error: File not found.")

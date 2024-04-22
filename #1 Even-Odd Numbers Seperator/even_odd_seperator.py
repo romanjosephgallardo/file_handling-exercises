@@ -25,9 +25,8 @@ try:
                 num = int(num_str)
                 numbers.append(num)
             except ValueError:
-                print_message(f"Error: non-integer value found in file.")
+                print_message("Error: non-integer value found in file.")
                 exit(1)
-        numbers = (int(num) for num in numbers)
 except FileNotFoundError:
     print_message("File not found.")
     exit(1)
