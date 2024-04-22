@@ -24,13 +24,13 @@ with open("mylife.txt", "w") as file:
         while True:
             # Ask user where there are more lines to enter
             more_lines = input("Are there more lines? (y/n): ")
-            if more_lines.lower() == "y" or more_lines.lower() == "n":
+            if more_lines.lower() in ["y", "n"]:
                 break
             else:  # Prompts the user for invalid input
                 print_message("Invalid input. Please enter 'y' or 'n' only.")
         # If no more lines, end the program.
         if more_lines.lower() == "n":
-            print_message("Contents written to file successfully! :> \n")
+            print_message("Contents written to file successfully! :>. \n")
             break
 
 horizontal_border()
