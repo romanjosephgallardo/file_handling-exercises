@@ -26,6 +26,6 @@ with open("double.txt", "w") as double_file:
 with open("triple.txt", "w") as triple_file:
     triple_file.write("Here are the cube of all odd integers: \n")
     for num in odd_numbers:
-        triple_file.write(str(num) + "\n")
+        triple_file.write(f"{num}\N{SUPERSCRIPT THREE} = {num ** 3} \n")
 
 # Shows an output where the files are already created
