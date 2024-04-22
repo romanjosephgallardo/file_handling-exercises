@@ -1,3 +1,8 @@
+""" This program writes multiple lines of text
+into a text file. Users can enter a string each line
+until finished with prompts guiding the process.
+"""
+
 # Define a function for horizontal line
 def horizontal_border():
     print("=" * 50, "\n")

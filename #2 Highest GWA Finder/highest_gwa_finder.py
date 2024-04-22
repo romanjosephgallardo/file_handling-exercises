@@ -1,8 +1,9 @@
 import pandas as pd
 
-''' Have a file with 20 students and their GWA
-For instance, this program used Excel file (.xlsx)
-The program uses 5-point scale for GWA where 1.00 is the highest '''
+""" Have a file with 20 students and their GWA.
+For this program, it uses Excel file (.xlsx).
+It uses a 5-point scale for GWA, with 1.00 being the highest
+"""
 
 
 # Define a function to print an output
