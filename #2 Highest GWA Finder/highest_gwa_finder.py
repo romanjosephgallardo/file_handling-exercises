@@ -2,7 +2,7 @@ import pandas as pd
 
 """ Have a file with 20 students and their GWA.
 For this program, it uses Excel file (.xlsx).
-It uses a 5-point scale for GWA, with 1.00 being the highest
+This program uses a 5-point scale to detect GWA, with 1.00 being the highest
 """
 
 
