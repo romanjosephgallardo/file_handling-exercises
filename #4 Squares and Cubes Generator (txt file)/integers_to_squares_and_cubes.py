@@ -12,15 +12,15 @@ odd_numbers = []
 
 for num in integers:
     if num % 2 == 0:
-        even_numbers.append(num ** 2)
+        even_numbers.append(num)
     else:
-        odd_numbers.append(num ** 3)
+        odd_numbers.append(num)
 
 # Create double.txt file containing squares of even integers
 with open("double.txt", "w") as double_file:
     double_file.write("Here are the square of all even integers: \n")
     for num in even_numbers:
-        double_file.write(str(num) + "\n")
+        double_file.write(f"{num}\N{SUPERSCRIPT TWO} = {num ** 2} \n")
 
 # Create triple.txt file containing cubes of odd numbers
 with open("triple.txt", "w") as triple_file:
