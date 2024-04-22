@@ -11,9 +11,9 @@ with open("mylife.txt", "w") as file:
             more_lines = input("Are there more lines? (y/n): ")
             if more_lines.lower() == "y" or more_lines.lower() == "n":
                 break
-            else:
+            else:  # Prompts the user for invalid input
                 print("Invalid input. Please enter 'y' or 'n' only.")
         # If no more lines, end the program.
         if more_lines.lower() == "n":
-            print("Contents written to mylife.txt successfully! :>")
+            print("Contents written to file successfully! :>")
             break
