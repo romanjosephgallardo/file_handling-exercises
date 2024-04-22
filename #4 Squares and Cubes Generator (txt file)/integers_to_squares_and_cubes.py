@@ -1,4 +1,10 @@
-# pseudocode
+# Define a function for styling the output display
+def print_message(message):
+    horizontal_border = "=" * 50
+    formatted_message = (f"{horizontal_border}\n\n"
+                         f"{message.center(50)}\n\n"
+                         f"{horizontal_border}")
+    print(formatted_message)
 
 # Read the contents of the source text file
 with open("integers.txt", "r") as file:
@@ -29,4 +35,4 @@ with open("triple.txt", "w") as triple_file:
         triple_file.write(f"{num}\N{SUPERSCRIPT THREE} = {num ** 3} \n")
 
 # Shows an output where the files are already created
-print("The files have been successfully created :>.")
+print_message("The files have been created :>.")
