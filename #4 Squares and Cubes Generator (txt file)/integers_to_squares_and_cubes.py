@@ -20,10 +20,14 @@ def cube_integers(num):
 
 
 # Read the contents of the source text file
-with open("integers.txt", "r") as file:
-    integers = file.read().split()
-    # Convert string to integers
-    integers = (int(num) for num in integers)
+try:
+    with open("integers.txt", "r") as file:
+        integers = file.read().split()
+        # Convert string to integers
+        integers = (int(num) for num in integers)
+except FileNotFoundError:
+    print_message("Error: File not found.")
+    exit(1)
 
 # Find the even and odd numbers in the txt file
 even_numbers = []
