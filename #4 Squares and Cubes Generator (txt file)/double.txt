@@ -3,6 +3,6 @@ Here are the square of all even integers:
 14² = 196 
 4² = 16 
 2² = 4 
-34² = 1156 
+34² = 1,156 
 12² = 144 
 22² = 484 

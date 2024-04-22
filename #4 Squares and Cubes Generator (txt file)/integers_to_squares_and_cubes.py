@@ -6,6 +6,17 @@ def print_message(message):
                          f"{horizontal_border}")
     print(formatted_message)
 
+# Calculate square of even numbers
+def square_integers(num):
+    squared = num ** 2
+    return "{:,.0f}".format(squared)
+
+# Calculate cube of odd numbers
+def cube_integers(num):
+    squared = num ** 2
+    return "{:,.0f}".format(squared)
+
+
 # Read the contents of the source text file
 with open("integers.txt", "r") as file:
     integers = file.read().split()
@@ -26,13 +37,13 @@ for num in integers:
 with open("double.txt", "w") as double_file:
     double_file.write("Here are the square of all even integers: \n")
     for num in even_numbers:
-        double_file.write(f"{num}\N{SUPERSCRIPT TWO} = {num ** 2} \n")
+        double_file.write(f"{num}\N{SUPERSCRIPT TWO} = {square_integers(num)} \n")
 
 # Create triple.txt file containing cubes of odd numbers
 with open("triple.txt", "w") as triple_file:
     triple_file.write("Here are the cube of all odd integers: \n")
     for num in odd_numbers:
-        triple_file.write(f"{num}\N{SUPERSCRIPT THREE} = {num ** 3} \n")
+        triple_file.write(f"{num}\N{SUPERSCRIPT THREE} = {cube_integers(num)} \n")
 
 # Shows an output where the files are already created
 print_message("The files have been created :>.")
