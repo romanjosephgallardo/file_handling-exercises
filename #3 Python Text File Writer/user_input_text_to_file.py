@@ -5,7 +5,11 @@ with open("mylife.txt", "w") as file:
     while True:
         # Prompt user to input a line of text
         line = input("Enter line: ")
+        if not line.strip():  # Check if line is empty or whitespace only
+            print("Invalid line. Please enter a non-empty line.")
+            continue
         file.write(line + "\n")
+
         while True:
             # Ask user where there are more lines to enter
             more_lines = input("Are there more lines? (y/n): ")
