@@ -18,7 +18,7 @@ def print_message(message):
 horizontal_border()  # Calls the horizontal border function
 
 # Create a text file
-with open("mylife.txt", "w") as file:
+with open("mylife.txt", "a") as file:
     while True:
         # Prompt user to input a line of text
         line = input("Enter line: ")
