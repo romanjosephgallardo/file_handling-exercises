@@ -1,3 +1,4 @@
+# Make a "numbers.txt" file with 20 integers (already done)
 """This program reads a .txt file containing 20 integers.
 The file (numbers.txt) is already located in the same
 file folder where this program is located.
@@ -16,8 +17,16 @@ def print_message(message):
 # Read the contents of the txt file
 try:
     with open("numbers.txt", "r") as file:
-        numbers = file.read().split()
-        # Convert string to integers
+        numbers_str = file.read().split()
+        # Convert string to integers, handling non-integer values
+        numbers = []
+        for num_str in numbers_str:
+            try:
+                num = int(num_str)
+                numbers.append(num)
+            except ValueError:
+                print_message(f"Error: non-integer value found in file.")
+                exit(1)
         numbers = (int(num) for num in numbers)
 except FileNotFoundError:
     print_message("File not found.")
