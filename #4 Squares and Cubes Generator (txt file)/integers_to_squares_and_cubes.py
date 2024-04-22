@@ -29,3 +29,4 @@ with open("triple.txt", "w") as triple_file:
         triple_file.write(f"{num}\N{SUPERSCRIPT THREE} = {num ** 3} \n")
 
 # Shows an output where the files are already created
+print("The files have been successfully created :>.")
