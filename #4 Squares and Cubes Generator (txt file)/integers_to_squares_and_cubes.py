@@ -8,14 +8,14 @@ def print_message(message):
 
 
 # Calculate square of even numbers
-def square_integers(num):
-    square = num ** 2
+def square_integers(number):
+    square = number ** 2
     return "{:,.0f}".format(square)
 
 
 # Calculate cube of odd numbers
-def cube_integers(num):
-    cube = num ** 3
+def cube_integers(number):
+    cube = number ** 3
     return "{:,.0f}".format(cube)
 
 
