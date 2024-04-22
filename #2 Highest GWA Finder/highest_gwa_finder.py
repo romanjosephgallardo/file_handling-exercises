@@ -29,6 +29,12 @@ try:
 except FileNotFoundError:
     print_error_message("Error: File not found.")
     exit(1)
+except pd.errors.EmptyDataError:
+    print_error_message("Error: File is empty")
+    exit(1)
+except pd.errors.ParserError:
+    print_error_message("Error: Invalid format")
+    exit(1)
 
 # Check if the file is empty
 if student_data.empty:
