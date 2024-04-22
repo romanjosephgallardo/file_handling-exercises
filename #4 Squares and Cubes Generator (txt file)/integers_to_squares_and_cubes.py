@@ -22,9 +22,16 @@ def cube_integers(num):
 # Read the contents of the source text file
 try:
     with open("integers.txt", "r") as file:
-        integers = file.read().split()
-        # Convert string to integers
-        integers = (int(num) for num in integers)
+        integers_str = file.read().split()
+        # Convert string to integers, handling non-integer values
+        integers = []
+        for int_str in integers_str:
+            try:
+                num = int(int_str)
+                integers.append(num)
+            except ValueError:
+                print_message(f"Error: non-integer value found in file.")
+                exit(1)
 except FileNotFoundError:
     print_message("Error: File not found.")
     exit(1)
