@@ -1,4 +1,3 @@
-# Make a "numbers.txt" file with 20 integers (already done)
 """This program reads a .txt file containing 20 integers.
 The file (numbers.txt) is already located in the same
 file folder where this program is located.
