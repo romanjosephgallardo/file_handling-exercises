@@ -1,10 +1,8 @@
-
-"""This program reads a .txt file contains 20 integers,
+""" This program reads a .txt file contains 20 integers,
 and generates two output files: even.txt (containing
 all even integers, and odd.txt (all odd integers).
 The file (numbers.txt) is already located in the same
-file folder where this program is located.
-"""
+file folder where this program is located. """
 
 
 # Define a function to print a message
