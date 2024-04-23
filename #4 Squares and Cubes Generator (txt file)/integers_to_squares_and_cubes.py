@@ -1,3 +1,9 @@
+""" The program reads a .txt file that that contains
+20 integers, and generates two output files: double.txt
+(containing squares of even integers) and triple.txt
+(containing cubes of odd integers). """
+
+
 # Define a function for styling the output display
 def print_message(message):
     horizontal_border = "=" * 50
