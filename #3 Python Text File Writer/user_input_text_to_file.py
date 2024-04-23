@@ -1,7 +1,6 @@
 """ The program writes multiple lines of text
 into a text file. Users can enter any characters each line
-until finished with prompts guiding the process.
-"""
+until finished with prompts guiding the process. """
 
 
 # Define a function for horizontal line
