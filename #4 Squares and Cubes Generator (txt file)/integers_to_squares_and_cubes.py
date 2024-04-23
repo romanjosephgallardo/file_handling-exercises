@@ -56,13 +56,15 @@ for num in integers:
 with open("double.txt", "w") as double_file:
     double_file.write("Here are the square of all even integers: \n")
     for num in even_numbers:
-        double_file.write(f"{num}\N{SUPERSCRIPT TWO} = {square_integers(num)} \n")
+        double_file.write(f"{num}\N{SUPERSCRIPT TWO} = "
+                          f"{square_integers(num)} \n")
 
 # Create triple.txt file containing cubes of odd numbers
 with open("triple.txt", "w") as triple_file:
     triple_file.write("Here are the cube of all odd integers: \n")
     for num in odd_numbers:
-        triple_file.write(f"{num}\N{SUPERSCRIPT THREE} = {cube_integers(num)} \n")
+        triple_file.write(f"{num}\N{SUPERSCRIPT THREE} = "
+                          f"{cube_integers(num)} \n")
 
 # Shows an output where the files are already created
 print_message("The files have been created :>.")

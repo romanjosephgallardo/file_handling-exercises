@@ -1,6 +1,6 @@
 import pandas as pd
 
-""" The program reads a a file of 20 students' name
+""" The program reads a file of 20 students' name
 and GWA, outputs the student with the highest GWA.
 The program reads a .xlsx file and uses a 5-point scale
 to read GWA, with 1.00 being the highest"""
@@ -19,7 +19,9 @@ def print_message(first_line, second_line):
 # Define a function to print error outputs
 def print_error_message(error):
     horizontal_border = "=" * 50
-    formatted_message = f"{horizontal_border}\n\n{error.center(50)}\n\n{horizontal_border}"
+    formatted_message = (f"{horizontal_border}\n\n"
+                         f"{error.center(50)}\n\n"
+                         f"{horizontal_border}")
     print(formatted_message)
 
 
@@ -50,5 +52,4 @@ student_gwa = highest_gwa.iloc[1]
 # Display the student and their GWA
 output_message = "Student with the highest GWA:"
 name_and_gwa = f"{student_name} — {student_gwa}"
-
 print_message(output_message, name_and_gwa)
