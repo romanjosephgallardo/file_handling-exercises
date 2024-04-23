@@ -1,5 +1,5 @@
-""" This program writes multiple lines of text
-into a text file. Users can enter a string each line
+""" The program writes multiple lines of text
+into a text file. Users can enter any characters each line
 until finished with prompts guiding the process.
 """
 

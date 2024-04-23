@@ -1,9 +1,9 @@
 import pandas as pd
 
-""" Have a file with 20 students and their GWA.
-For this program, it uses Excel file (.xlsx).
-This program uses a 5-point scale to detect GWA, with 1.00 being the highest
-"""
+""" The program reads a a file of 20 students' name
+and GWA, outputs the student with the highest GWA.
+The program reads a .xlsx file and uses a 5-point scale
+to read GWA, with 1.00 being the highest"""
 
 
 # Define a function to print an output
